@@ -1,0 +1,19 @@
+<h1>New Blog Post</h1>
+
+<!-- <form method='/pages' action="POST">
+  <input type="text" required name="title" placeholder="Blog Title">
+  <br>
+  <input type="text" required name="author" placeholder="Blog Author">
+  <br>
+  <textarea name="content" required placeholder="Blog Content"></textarea>
+  <br>
+  <label>Public?</label>
+  <input type="checkbox" name="public">
+  <br>
+  <input type="submit">
+
+</form> -->
+
+<%= render 'form' %>
+
+<%= link_to 'Back to posts', pages_path, class: 'btn btn-primary' %>

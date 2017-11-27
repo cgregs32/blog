@@ -1,0 +1,15 @@
+<h1>Hey! is the index page!</h1>
+
+
+<% if @pages.any?  %>
+  <% @pages.each do |page| %>
+    <h3><%= link_to page.title, page_path(page) %></h3>
+    <h5><%= page.author %></h5>
+    <p><%= page.content %></p>
+    <hr>
+  <% end %>
+<% else %>
+  <h4>No Pages, Please  <%= link_to 'Create One!', new_page_path %></h4>
+<% end %>
+
+<%= link_to 'New Blog Post', new_page_path %>

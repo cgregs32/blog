@@ -1,0 +1,19 @@
+
+<div class="form-group card">
+  <%= form_for @page do |f| %>
+    <%= f.label :title %>
+    <%= f.text_field :title, required: true, class: "form-control" %>
+    <br>
+    <%= f.label :author %>
+    <%= f.text_field :author, required: true, class: "form-control" %>
+    <br>
+    <%= f.label :content %>
+    <%= f.text_area :content, required: true, class: "form-control" %>
+    <br>
+    <%= f.label :public %>
+    <%= f.check_box :public %>
+    <br>
+    <%= f.submit %>
+
+  <% end %>
+</div>
